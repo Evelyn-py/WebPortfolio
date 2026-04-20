@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@3.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="title">
+            Eve's Portfolio
+        </a>
+        <nav class="NavToggle">
+            <a href="#Me">Me</a>
+            <a href="#Resume">Resume</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="footage.html">Footage</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Me" class="Container Me">
+            <div class="ImgBox">
+                <i class="bi bi-question-circle-fill"></i>
+                <p>"Curiosity is the Key."</p>
+            </div>
+
+            <div class="TextBox">
+                <div class="SubContainer">
+                    <h1>Evelyn</h1>
+                    <p>Hi, I'm a data analyst who skillful in Python, CSS, JS & Power BI.</p>
+                    <div class="Download">
+
+                        <a href="Docs/DAresume.pdf" target="_blank" class="download-pdf">
+                            <i class="bi bi-eye"></i> View Resume
+                        </a>
+
+                        <a href="Docs/DAresume.pdf" download class="download-pdf">
+                            <i class="bi bi-download"></i> Download Resume.pdf
+                        </a>
+
+                        <a target="_blank" title="Whatapps Me" href="https://wa.me/60103317628" class="msg">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="LiveReaction">
+
+                    <form class="Comment">
+                        <input type="text" placeholder="Leave Your Comment" id="Comment">
+                        <button type="submit" id="comment">
+                            <i class="cil-arrow-circle-top"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="FloatingCommentContainer" id="CommentMe">
+                <p class="floating-comment floating1">Nice Work</p>
+                <p class="floating-comment floating2">Keep going!</p>
+                <p class="floating-comment floating3">I'll hire youuu</p>
+            </div>
+        </section>
+
+        <section id="Resume" class="Container Resume">
+
+            <ul class="NavResume">
+                <li onclick="AddClassResume('li.resumechoice', 'div.ResumeContainer div.Resume-Content', '.resumechoice.exp', 'ResumeChoosen','#Resume-Experience', 'Visible')"
+                    class="resumechoice exp ">Experience</li>
+                <li onclick="AddClassResume('li.resumechoice', 'div.ResumeContainer div.Resume-Content', '.resumechoice.edu', 'ResumeChoosen','#Resume-Education', 'Visible')"
+                    class="resumechoice edu ">Education</li>
+                <li onclick="AddClassResume('li.resumechoice', 'div.ResumeContainer div.Resume-Content', '.resumechoice.skill', 'ResumeChoosen', '#Resume-Skills', 'Visible')"
+                    class="resumechoice skill ResumeChoosen">Skills
+                </li>
+            </ul>
+
+            <div class="ResumeContainer">
+                <div class="Resume-Content " id="Resume-Experience">
+                    <h2>Experience</h2>
+                    <p>
+                    <h3>Web Development Tutor</h3>
+                    <i class="subtitle">2024 Oct - Present</i>
+                    <ul>
+                        <li>Teach CSS, JS, HTML & Python</li>
+                        <li>Explain the knowledge based on the children's understanding</li>
+                        <li>Tailoring teaching style based on different cognitive level</li>
+                    </ul>
+                    </p>
+
+                    <p>
+                    <h3>Python Syllabus Editor</h3>
+                    <i class="subtitle">2024 Oct - 2025 March</i>
+                    <ul>
+                        <li>Design python framework based on the company's aim</li>
+                        <li>Exposed to hands on project of Python</li>
+                        <li>Design curriculum and prepare teaching material for the tutor</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="Resume-Content " id="Resume-Education">
+                    <h2>Education</h2>
+                    <h3>International Medical University</h3>
+                    <i class="subtitle">Bachelor(Hons) of Science in Psychology</i>
+                    <ul>
+                        <li>Picked Up: SPSS, Industrial Organizational Psychology, ...</li>
+                        <li>Experience as Research Assistant</li>
+                    </ul>
+                </div>
+
+                <div class="Resume-Content Visible" id="Resume-Skills">
+                    <h2>Skills</h2>
+                    <div class="skill-container">
+                        <div class="Skills-Card">
+                            <i class="devicon-javascript-plain Skill-Pic"></i>
+                            <span class="Skill-Title">Javascript</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-html5-plain Skill-Pic"></i>
+                            <span class="Skill-Title">HTML</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-css3-plain Skill-Pic"></i>
+                            <span class="Skill-Title">CSS</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-pycharm-plain Skill-Pic"></i>
+                            <span class="Skill-Title">Python</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-pandas-plain Skill-Pic"></i>
+                            <span class="Skill-Title">Pandas</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-numpy-plain Skill-Pic"></i>
+                            <span class="Skill-Title">Numpy</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-figma-plain Skill-Pic"></i>
+                            <span class="Skill-Title">Figma</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-spss-plain Skill-Pic"></i>
+                            <span class="Skill-Title">SPSS</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="devicon-mysql-plain Skill-Pic"></i>
+                            <span class="Skill-Title">MySQL</span>
+                        </div>
+                        <div class="Skills-Card">
+                            <i class="bi bi-reception-4 Skill-Pic"></i>
+                            <span class="Skill-Title">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Portfolio" class="Container Portfolio">
+            <div class="TextBox">
+                <nav>
+                    <ul class="PortfolioNav">
+                        <li class="PortfolioChoosen"
+                            onclick="AddClassResume('ul.PortfolioNav li', 'section.Portfolio div.SubContainer', 'ul.PortfolioNav li:first-child', 'PortfolioChoosen', 'section.Portfolio div.SubContainer.Achievement', 'Visible'); change_text('h2#PortfolioTitle', 'Achievement')">
+                            Achievement</li>
+                        <li
+                            onclick="AddClassResume('ul.PortfolioNav li', 'section.Portfolio div.SubContainer', 'ul.PortfolioNav li:last-child', 'PortfolioChoosen', 'section.Portfolio div.SubContainer.Projects', 'Visible'); change_text('h2#PortfolioTitle', 'Projects')">
+                            Projects</li>
+                    </ul>
+                    <h2 id="PortfolioTitle">Achievement</h2>
+                </nav>
+
+                <div class="SubContainer Achievement Visible">
+                    <i class="bi bi-arrow-left PortfolioBack" onclick="back_arrow()"></i>
+                    <div id="PortfolioDescription" class="Description">
+                        <h3 class="title" onclick="">IMU 2024 Digital Health Hackathon</h3>
+                        <i class="project-name" onclick="">Mindwave</i>
+                        <p class="project-description">
+                            Mindwave aims to link those who are mentally fatigue. Through picking up mindful practice
+                            and exploring with the like, they are able to face the hurdle postively.
+                        </p>
+                    </div>
+                    <i class="bi bi-arrow-right PortfolioNext" onclick="next_arrow()"></i>
+                </div>
+
+                <div class="SubContainer Projects">
+                    <i class="bi bi-arrow-left PortfolioBack" onclick="back_arrow()"></i>
+                    <div id="PortfolioDescription" class="Description">
+                        <h3 class="title">Power BI Dashboard</h3>
+                        <i class="project-name">Ikeas 2024 KPI</i>
+                        <p class="project-description">
+                            <i>Higher discounts do not associate with high profit margin.</i> Other factors such as
+                            demands and sales of each category across the countries should be considered.
+
+                            </br></br><i>Same Day shipping is the most frequently used option</i> despite higher
+                            associated tax
+                            costs, suggesting customers prioritize speed over cost. </br>
+                            This indicates an opportunity to optimize pricing for premium shipping tiers.
+
+
+                            </br></br><i>Kitchen category shows highest return rate (~25%)</i>, with returns
+                            concentrated in Canada
+                            and Spain, indicating a potential issue in product handling, logistics, or regional demand
+                            mismatch.</br>
+                            Further investigation is required to determine whether returns are driven by logistics,
+                            product quality, or customer expectations.
+
+                            </br></br><i>Furniture generates the highest return sales ($648k)</i> and is associated with
+                            lower
+                            average ratings and higher discounts levels, suggesting potential issues in pricing
+                            strategy, product quality or product satisfaction.</br>
+                            This category may require review of discount policies and product quality to reduce returns
+                            and improve profitablity.
+
+                    </div>
+                    <i class="bi bi-arrow-right PortfolioNext" onclick="next_arrow()"></i>
+                </div>
+
+            </div>
+            <div class="ImgBox">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="600" height="450"
+                    src="https://embed.figma.com/proto/HajQ0ER3gH9XHcQZt1XcAg/mind-wave?node-id=4-18&starting-point-node-id=4%3A18&embed-host=share"
+                    allowfullscreen class="portfolio-content Visible"></iframe>
+
+                <a target="_blank" href="https://github.com/Evelyn-py/Sound-ctrl-youtube.git"
+                    class="button-to-project portfolio-content">
+                    <i class="devicon-github-original "></i>
+                    Visit the Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>All right reserved 2026. &copy; Evelyn</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
